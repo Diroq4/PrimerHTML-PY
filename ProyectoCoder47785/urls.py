@@ -20,6 +20,7 @@ from AppCoder.views import crear_curso
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('app/', include('AppCoder.urls'))
+    path('app/', include('AppCoder.urls')),
+    path('accounts/', include('accounts.urls')),
 
 ]

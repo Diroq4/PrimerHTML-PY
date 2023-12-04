@@ -7,7 +7,7 @@ urlpatterns = [
     path('curso/', crear_curso_form),
     path('buscar/', busqueda_camada),
     path('show/', show_html),
-    path('cursos/', mostrar_cursos),
+    path('cursos/', mostrar_cursos, name="CursosList"),
     path('cursos/listar/', CursoList.as_view(), name="CursosList"),
     path('^curso/<int:pk>', CursoDetalle.as_view(), name="CursoDetail"),
     path('crear/', CursoCreacion.as_view(), name="CursoCreate"),
